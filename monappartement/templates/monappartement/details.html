@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Krili-Rim location des appartements</title>
+  
+  {% load static %}
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/shop-homepage.css' %}" rel="stylesheet">
+  <style> 
+  body{
+      background-color:#F0F8FF;
+ }
+ 
+ </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info   fixed-top">
+    <div class="container">
+       <a class="navbar-brand" href="#" style="font-style:italic;"><strong>Krili-Rim</strong></a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Acceuil
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br/>
+  
+   <!-- Page Content -->
+<div class="container">
+
+  <!-- Portfolio Item Heading -->
+  <h1 class="my-4">{{produits.titre}}
+    <small>à {{produits.categ}}</small>
+  </h1>
+
+  <!-- Portfolio Item Row 
+  <div class="row">
+
+    <div class="col-md-8">
+      <img class="d-block w-100" src="{{produits.imgdetail.url}}" alt="">
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="my-3">Plus d'informations:</h3>
+      <p style="font-size:21px;">{{produits.information}}</p>
+       
+    </div>
+ </div>-->
+  
+   <div class="row" >
+            
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+               <div class="header"> Cuisine </div>
+                 <a href="#"><img class="card-img-top" src="{{produits.imgcuisine.url}}" alt=""></a>  
+              <div class="card-body"style="background-color:#F0F8FF;">
+                <p class="card-text"style="font-size:21px;" > 
+                    {{produits.infocuisine}}  
+                </p>
+              </div>
+              
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+               <div class="header"> Chambre </div>
+               <a href="#"><img class="card-img-top" src="{{produits.imgchambre.url}}" alt=""></a>  
+              <div class="card-body"style="background-color:#F0F8FF;">    
+                <p class="card-text"style="font-size:21px;" > 
+                    {{produits.infochambre}} 
+                </p>
+              </div>
+              
+            </div>
+          </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="header"> Douche </div>
+             <a href="#"><img class="card-img-top" src="{{produits.imgdouche.url}}" alt=""></a> 
+              <div class="card-body"style="background-color:#F0F8FF;">
+                <p class="card-text"style="font-size:21px;" > 
+                      {{produits.infodouche}} 
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        
+          
+
+       
+</div>
+ <br>
+   <!-- Footer -->
+  <footer class="py-5 bg-info">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Krili-Rim 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  {% load static %}
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
+
+  
+  
+  
+  
+  
